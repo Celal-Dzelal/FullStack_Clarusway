@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./background_image.jpg);
+  color: white;
+}
+.main {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  height: 100vh;
+}
+form {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  width: 20%;
+  padding: 20px 5px 20px 5px;
+}
+header {
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+header span {
+  color: red;
+}
+
+h1 {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.box {
+  padding: 5px 0px 5px 20px;
+}
+
+.box label {
+  line-height: 1.5rem;
+}
+
+.box .text,
+textarea {
+  width: 90%;
+}
+
+.text {
+  height: 2rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.submit {
+  text-align: center;
+  padding: 10px;
+}
+
+.submit input {
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: red;
+  color: white;
+}

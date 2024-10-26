@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #e0f7fa;
+      }
+      td {
+        padding: 5px 20px;
+        margin: 10px;
+      }
+      label,
+      legend {
+        font-weight: bold;
+      }
+      legend {
+        color: #00796b;
+      }
+      label {
+        line-height: 1.5rem;
+      }
+      table {
+        border-spacing: 5px;
+      }
+      header {
+        text-align: center;
+        margin: 20px 10px;
+        
+      }
+      textarea {
+        resize: none;
+      }
+      fieldset {
+        padding: 2px 15px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+      }
+      .inp1,
+      .inp2 {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        height: 1.5rem;
+      }
+      .submit {
+        text-align: center;
+      }
+      img {
+        width: 60px;
+        margin-bottom: 20px;
+      }
+      .inp2 {
+        background-color: #00796b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+        color: #00796b;
+        margin-bottom: 10px;
+      }
+      .container {
+        background-color: white;
+        padding: 30px;
+        margin: auto;
+        width: 320px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./1034131.png" alt="" />
+        <h1>Application Form</h1>
+      </header>
+      <table>
+        <tr>
+          <td>
+            <label for="full_name">Full Name:</label>
+            <br />
+            <input class="inp1" type="text" id="full_name" name="Full-Name" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="e-mail">Email:</label>
+            <br />
+            <input class="inp1" type="email" id="e-mail" name="E-Mail" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phone">Phone Number:</label>
+            <br />
+            <input class="inp1" type="tel" name="Phone-Number" id="phone" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="birthdate">Date of Birth:</label>
+            <br />
+            <input
+              class="inp1"
+              type="date"
+              name="Date-of-Birth"
+              id="birthdate"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Gender:</label> <br />
+            <input type="radio" name="Gender" id="male" value="Male" />
+            <label for="male">Male</label>
+            <br />
+            <input type="radio" name="Gender" id="female" value="Female" />
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="country">Country:</label>
+            <br />
+            <input
+              class="inp1"
+              type="text"
+              name="Country"
+              id="country"
+              list="motherland"
+            />
+            <datalist name="Country" id="motherland">
+              <option value="Turkiye"></option>
+              <option value="Hungary"></option>
+              <option value="Bosnia"></option>
+              <option value="Canada"></option>
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <fieldset>
+              <legend>Skills and Experience</legend>
+              <br />
+              <input type="checkbox" name="Skills" id="coding" value="Coding" />
+              <label for="coding">Coding</label>
+              <br />
+              <input type="checkbox" name="Skills" id="design" value="Design" />
+              <label for="design">Design</label>
+              <br />
+              <input
+                type="checkbox"
+                name="Skills"
+                id="marketing"
+                value="Marketing"
+              />
+              <label for="marketing">Marketing</label>
+              <br />
+              <label for="exp">Brief Experience</label><br />
+              <textarea name="Brief-Experience" id="exp" rows="5px" cols="20px"></textarea>
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td class="submit">
+            <input class="inp2" type="submit" value="Submit Application" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

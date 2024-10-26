@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: skyblue;
+  color: darkblue;
+  border: 2px solid;
+  width: 100%;
+}
+nav {
+  /* border: 2px solid darkblue; */
+  background-color: darkorange;
+  padding: 15px;
+  text-align: center;
+  width: inherit;
+  margin-bottom: 5px;
+}
+header {
+  /* border: 2px solid darkblue; */
+  height: 500px;
+  width: inherit;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 5px;
+  background-image: url("https://picsum.photos/id/569/600/400");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.left {
+  /* border: 2px solid darkblue; */
+  float: left;
+  width: 24%;
+  height: 200px;
+  margin: 0 1% 5px 0;
+  align-content: center;
+  text-align: center;
+  background-color: whitesmoke;
+}
+article {
+  /* border: 2px solid darkblue; */
+  float: left;
+  width: 50%;
+  height: 200px;
+  margin: 0 1% 5px 0;
+  align-content: center;
+  text-align: center;
+  background-color: whitesmoke;
+}
+.right {
+  /* border: 2px solid darkblue; */
+  float: left;
+  width: 24%;
+  height: 200px;
+  margin: 0 0 5px 0;
+  align-content: center;
+  text-align: center;
+  background-color: whitesmoke;
+}
+footer {
+  clear: left;
+  /* border: 2px solid darkblue; */
+  height: 100px;
+  margin-bottom: 5px;
+  align-content: center;
+  text-align: center;
+  background-color: darkorange;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
